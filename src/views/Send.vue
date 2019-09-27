@@ -269,25 +269,25 @@ export default {
                if(!that.goodInfo[item]){
                    switch(item){
                        case "number":
-                           alert('商品 编号不能为空');
+                           alert('物品编号不能为空');
                             return;
                         case "goods_name":
-                           alert('商品名称不能为空');
+                           alert('物品名称不能为空');
                            return;
                         case "brief":
-                          alert('商品介绍不能为空');
+                          alert('物品介绍不能为空');
                           return;
                         case "size":
-                          alert('商品规格不能为空');
+                          alert('规格不能为空');
                           return;
                         case "brand":
-                          alert('商品品牌不能为空');
+                          alert('品牌不能为空');
                           return;
                         case "num":
-                          alert('商品数量不能为空');
+                          alert('数量不能为空');
                           return;
                         case "money":
-                          alert('商品单价不能为空');
+                          alert('单价不能为空');
                           return;
                         default:
                     }     
