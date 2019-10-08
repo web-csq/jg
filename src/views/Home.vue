@@ -31,13 +31,12 @@
         <keep-alive v-if="$route.meta.keepAlive">
           <router-view :class="$route.path==='/query'?'posi2':(($route.path==='/login'||$route.path==='/reg')?'posi3':($route.path==='/pcupload'?'posi0':'posi1'))"></router-view>
         </keep-alive>
-         
-          <router-view :class="$route.path==='/query'?'posi2':(($route.path==='/login'||$route.path==='/reg')?'posi3':($route.path==='/pcupload'?'posi0':'posi1'))" v-if="!$route.meta.keepAlive"></router-view>
-        
+          <router-view :class="$route.path==='/query'?'posi2':($route.path==='/login'?'posi3':($route.path==='/pcupload'?'posi0':($route.path==='/reg'?'posi4':'posi1')))" v-if="!$route.meta.keepAlive"></router-view>
       </transition>
+    </div>
   </div>
-      
-  </div>
+
+  
   
 </div>
 </template>
@@ -158,7 +157,7 @@ export default {
   width: 100vw;
   background: url('../assets/bg4.jpg');
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
   box-shadow: 0 0 20px #c0e6fb;
 }
 .posi2{
@@ -178,6 +177,17 @@ export default {
   z-index: -2;
   width: 100vw;
   background: url('../assets/kefu.jpg');
+  background-size: cover;
+  height: 100vh;
+  box-shadow: 0 0 20px #c0e6fb;
+}
+.posi4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100vw;
+  background: url('../assets/kefu1.jpg');
   background-size: cover;
   height: 100vh;
   box-shadow: 0 0 20px #c0e6fb;

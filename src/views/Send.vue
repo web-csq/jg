@@ -20,7 +20,7 @@
                     <el-form-item label="物品编号:" label-width="120px" prop="number">
                         <el-input v-model="goodInfo.number" autocomplete="off"></el-input>
                     </el-form-item>
-                    <el-form-item label="物品名称:" label-width="120px" prop="goods_name">
+                    <el-form-item label="物品名称:" label-width="120px"  prop="goods_name">
                         <el-input v-model="goodInfo.goods_name" autocomplete="off"></el-input>
                     </el-form-item>
                     <el-form-item label="物品简介:" label-width="120px" prop="brief">
@@ -169,21 +169,21 @@ export default {
             },
             rules: {
                 name: [
-                    { required: true, message: '姓名不能为空', trigger: 'blur' },
+                    { required: true, message: '姓名不能为空', trigger: 'blur' }
                 ],
                 phone: [
-                    { required: true, message: '手机号不能为空', trigger: 'blur' },
+                    { required: true, message: '手机号不能为空', trigger: 'blur' }
                 ],
                 id: [
-                    { required: true, message: '身份证号码不能为空', trigger: 'blur' },
+                    { required: true, message: '身份证号码不能为空', trigger: 'blur' }
                 ],
                 addr: [
-                    { required: true, message: '收货地址不能为空', trigger: 'blur' },
+                    { required: true, message: '收货地址不能为空', trigger: 'blur' }
                 ],
             },
             options: [{
-                value: '选项1',
-                label: '黄金糕'
+                // value: '选项1',
+                // label: '黄金糕'
                 }],
             value:""
         }
@@ -331,6 +331,10 @@ export default {
     border-bottom:1px solid #ccc; 
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    
+}
+‎‬​‪‍‏​‌‭‏⁠‌‎‬​‪‍‏​‌‭‏⁠‌‪‫‮‬‎​‌‪‌‏‎‬‎‬​‪‍‏​‌‭‏⁠‌‪‫‮‬‎​‌‪‌‏‎‬‎‬​‪‍‏​‌‭‏⁠‌‪‫‮‬‎​‌‪‌‏‎‬‎‬​‪‍‏​‌‭‏⁠‌‪‫‮‬‎​‌‪‌‏‎‬‪‫‮‬‎​‌‪‌‏‎‬‎‬​‪‍‏​‌‭‏⁠‌‪‫‮‬‎​‌‪‌‏‎‬‎‬​‪‍‏​‌‭‏⁠‌‪‫‮‬‎​‌‪‌‏‎‬.title >>> .el-form-item__label{
+    color: #fff;
 }
 .container >>> .el-input__icon{
     line-height: 30px;
